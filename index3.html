@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header
+        {
+            text-align: center;
+            margin:2rem;
+        }
+        .main_container
+        {
+            max-width: 80vw;
+            margin:4rem 10rem;
+        }
+        .main_container
+        {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:2rem;
+            padding:1rem 12rem;
+        }
+        .card_container
+        {
+            height:65vh;
+            width:25vw;
+            border:1px solid black;
+            overflow:hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:10px;
+            border-radius: 5px;
+        }
+        .card_image_container
+       {
+            position: relative;
+            overflow: hidden;
+            height:17rem;
+            width:100%;
+        }
+         .card_image{
+            object-fit: cover;
+           object-position: center;
+            position: absolute;
+           height:100%;
+           width:100%;
+        } 
+        .company_details
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:0.8rem;
+        }
+        .card_container:hover .card_image
+     {
+           transform:scale(1.2);
+           transition-duration: 200m;
+     }
+     .desc
+     {
+        font-weight:7rem;
+        font-size: medium;
+     }
+     .price
+     {
+        color: red;
+     }
+     .company_details a{
+        text-decoration: none;
+     }
+     .order
+     {
+      border: 1px solid black;
+      height: 2rem;
+      width: 5rem;
+      padding:2px 6px;
+      border-radius: 2px;
+      background-color:aqua;
+      color: black;
+     }
+    </style>
+</head>
+<body>
+    <div class="body_container">
+        <header>
+            <h1>Famous Dining Table Brands</h1>
+        </header>
+        <main class="main_container">
+            <!--card1 starts here -->
+             <div class="card_container">
+              <a href="#" class="card_image_container">
+              <img src="https://dreamlineoutdoorfurniture.com/cdn/shop/products/Torney_Round_4_-_Person_Outdoor_Dining_Set.webp?v=1680256996&width=900" alt="card 1 image" class="card_image" loading="lazy"/>
+              </a>
+              <p class="desc">
+                <b>Dreamline White Furniture For Dining Tables</b>
+              </p>
+              <p class="price">
+                &#8377;20,000
+              </p>
+              <div class="company_details">
+                <p><a href="https://www.flipkart.com/">Flipkart</a></p>
+                <p>Free Shiping</p>
+                <p class="order"><a href="https://www.flipkart.com/"><b>Buy Now</b></a></p>
+              </div>
+             </div>
+             <!-- card 1 ends here -->
+             <!--card 2 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/w-dwr-7204-100081520-carrara-white-v2-001-1675301185.jpeg?crop=0.668xw:1.00xh;0.272xw,0&resize=640:*" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p>
+                  Front Door Dining Tables For Gardens
+                </p>
+                <p class="price">
+                  &#8377;9,250
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.Pepperfry.com/">Pepperfry</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.Pepperfry.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 2 ends here -->
+               <!--card 3 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://dreamlineoutdoorfurniture.com/cdn/shop/products/1c1667c2-faa7-4040-b072-f74a3b13ac9f.jpg?v=1603061308&width=900" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Dining Tables
+                </p>
+                <p class="price">
+                  &#8377;3,999
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.flipkart.com/">Flipkart</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.flipkart.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 3 ends here -->
+               <!--card 4 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://i.pinimg.com/originals/b0/53/2d/b0532d66e8024d0056ae47f9a3d3dbbd.png" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Wooden Dining Table By Amazon
+                </p>
+                <p class="price">
+                  &#8377;35,000
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.Amazon.com/">Amazon</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.Amazon.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 4 ends here -->
+               <!--card 5 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://www.ulcdn.net/images/products/808273/original/Bruno_Study_Table_TK_LP.png?1683920689" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Wooden Dining Table By Urban Ladder
+                </p>
+                <p class="price">
+                  &#8377;38,750
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.urbanladder.com/">Urban Ladder</a></p>
+                  <p>Charges on Shiping</p>
+                  <p class="order"><a href="https://www.urbanladder.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 5 ends here -->
+               <!--card 6 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://essenziale-hd.com/wp-content/uploads/2015/06/dining-table5.jpg" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Brown Dining Table By Ikea
+                </p>
+                <p class="price">
+                  &#8377;42,000
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.ikea.com/">Ikea</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.ikea.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 6 ends here -->
+        </main>
+    </div>
+</body>
+</html>

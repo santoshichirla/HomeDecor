@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header
+        {
+            text-align: center;
+            margin:2rem;
+        }
+        .main_container
+        {
+            max-width: 80vw;
+            margin:4rem 10rem;
+        }
+        .main_container
+        {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:2rem;
+            padding:1rem 12rem;
+        }
+        .card_container
+        {
+            height:65vh;
+            width:25vw;
+            border:1px solid black;
+            overflow:hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:10px;
+            border-radius: 5px;
+        }
+        .card_image_container
+       {
+            position: relative;
+            overflow: hidden;
+            height:17rem;
+            width:100%;
+        }
+         .card_image{
+            object-fit: cover;
+           object-position: center;
+            position: absolute;
+           height:100%;
+           width:100%;
+        } 
+        .company_details
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:0.8rem;
+        }
+        .card_container:hover .card_image
+     {
+           transform:scale(1.2);
+           transition-duration: 200m;
+     }
+     .desc
+     {
+        font-weight:7rem;
+        font-size: medium;
+     }
+     .price
+     {
+        color: red;
+     }
+     .company_details a{
+        text-decoration: none;
+     }
+     .order
+     {
+      border: 1px solid black;
+      height: 2rem;
+      width: 5rem;
+      padding:2px 6px;
+      border-radius: 2px;
+      background-color:aqua;
+      color: black;
+     }
+    </style>
+</head>
+<body>
+    <div class="body_container">
+        <header>
+            <h1>Famous Chair's Brands</h1>
+        </header>
+        <main class="main_container">
+            <!--card1 starts here -->
+             <div class="card_container">
+              <a href="#" class="card_image_container">
+              <img src="https://www.nilkamalfurniture.com/cdn/shop/products/pebblely_18_2000x.jpg?v=1678453271" alt="card 1 image" class="card_image" loading="lazy"/>
+              </a>
+              <p class="desc">
+                <b>Nilkamal Fyrebird Anthena Gaming Chair</b>
+              </p>
+              <p class="price">
+                &#8377;12,000
+              </p>
+              <div class="company_details">
+                <p><a href="https://www.flipkart.com/">Flipkart</a></p>
+                <p>Free Shiping</p>
+                <p class="order"><a href="https://www.flipkart.com/"><b>Buy Now</b></a></p>
+              </div>
+             </div>
+             <!-- card 1 ends here -->
+             <!--card 2 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="data:image/jpeg;base64,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" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p>
+                  Hush Desks in Columbia Walnut Finish
+                </p>
+                <p class="price">
+                  &#8377;2,250
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.Pepperfry.com/">Pepperfry</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.Pepperfry.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 2 ends here -->
+               <!--card 3 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO6GTcij61ED978jTeb3wgdnJ2R_AWdqYw1qARyawQggx85wy3NvzTMVmf-qe0jJh0PnE&usqp=CAU" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Wooden Chair
+                </p>
+                <p class="price">
+                  &#8377;5,999
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.flipkart.com/">Flipkart</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.flipkart.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 3 ends here -->
+               <!--card 4 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://lmsin.net/cdn-cgi/image/h=750,w=750,q=85,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/homecentre/1000011230748-1000011230747_01-2100.jpg" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Wooden Bluesh Chair By Amazon
+                </p>
+                <p class="price">
+                  &#8377;13,000
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.Amazon.com/">Amazon</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.Amazon.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 4 ends here -->
+               <!--card 5 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDqMJEwUaKFPZtYFCy4rzX7GYXCcyEPBWRNg&usqp=CAU" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Three Wooden chairs By Urban Ladder
+                </p>
+                <p class="price">
+                  &#8377;8,750
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.urbanladder.com/">Urban Ladder</a></p>
+                  <p>Charges on Shiping</p>
+                  <p class="order"><a href="https://www.urbanladder.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 5 ends here -->
+               <!--card 6 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3zKuEhdJYOqEe-oQiOOX0Egsl69pFqTSKQ&usqp=CAU" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Brown Wooden Table By Ikea
+                </p>
+                <p class="price">
+                  &#8377;12,000
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.ikea.com/">Ikea</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.ikea.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 6 ends here -->
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header
+        {
+            text-align: center;
+            margin:2rem;
+        }
+        .main_container
+        {
+            max-width: 80vw;
+            margin:4rem 10rem;
+        }
+        .main_container
+        {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:2rem;
+            padding:1rem 12rem;
+        }
+        .card_container
+        {
+            height:65vh;
+            width:25vw;
+            border:1px solid black;
+            overflow:hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:10px;
+            border-radius: 5px;
+        }
+        .card_image_container
+       {
+            position: relative;
+            overflow: hidden;
+            height:17rem;
+            width:100%;
+        }
+         .card_image{
+            object-fit: cover;
+           object-position: center;
+            position: absolute;
+           height:100%;
+           width:100%;
+        } 
+        .company_details
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:0.8rem;
+        }
+        .card_container:hover .card_image
+     {
+           transform:scale(1.2);
+           transition-duration: 200m;
+     }
+     .desc
+     {
+        font-weight:7rem;
+        font-size: medium;
+     }
+     .price
+     {
+        color: red;
+     }
+     .company_details a{
+        text-decoration: none;
+     }
+     .order
+     {
+      border: 1px solid black;
+      height: 2rem;
+      width: 5rem;
+      padding:2px 6px;
+      border-radius: 2px;
+      background-color:aqua;
+      color: black;
+     }
+    </style>
+</head>
+<body>
+    <div class="body_container">
+        <header>
+            <h1>Famous Bed Brands</h1>
+        </header>
+        <main class="main_container">
+            <!--card1 starts here -->
+             <div class="card_container">
+              <a href="#" class="card_image_container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCXLxdz0CI5gCpKeRn5uY06bv4FrN3ERyvvw&usqp=CAU" alt="card 1 image" class="card_image" loading="lazy"/>
+              </a>
+              <p class="desc">
+                <b>Deckup Hermes White Engineered Wood Bed</b>
+              </p>
+              <p class="price">
+                &#8377;46,119
+              </p>
+              <div class="company_details">
+                <p><a href="https://www.flipkart.com/">Flipkart</a></p>
+                <p>Free Shiping</p>
+                <p class="order"><a href="https://www.flipkart.com/"><b>Buy Now</b></a></p>
+              </div>
+             </div>
+             <!-- card 1 ends here -->
+             <!--card 2 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://img.merkandi.com/imgcache/resized/images/offer/2020/12/03/screen-shot-2020-12-03-at-171535-1607008819-1607008939.jpg" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p>
+                  Merkandi Beds in Columbia Walnut Finish
+                </p>
+                <p class="price">
+                  &#8377;37,799
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.Pepperfry.com/">Pepperfry</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.Pepperfry.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 2 ends here -->
+               <!--card 3 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://images.caxton.co.za/wp-content/uploads/sites/121/2023/09/HeidelbergNigel-MHC-Image.jpg" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  MHC  beds
+                </p>
+                <p class="price">
+                  &#8377;23,999
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.flipkart.com/">Flipkart</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.flipkart.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 3 ends here -->
+               <!--card 4 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1600361647-46cc253d-1e32-496b-9468-e9ed04394332_2.32779873fb740d4ecd75294409e3d5b7.jpg?crop=1.00xw:0.668xh;0,0.264xh&resize=980:*" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  AllsWell Beds By Amazon
+                </p>
+                <p class="price">
+                  &#8377;30,000
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.Amazon.com/">Amazon</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.Amazon.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 4 ends here -->
+               <!--card 5 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcoXo7qTkltMkg09zg0wyO19S494QLRiedZImSiRJ8Ng6JTOGeWD4BC82oDYANQ907oMo&usqp=CAU" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Wooden Beds By Urban Ladder
+                </p>
+                <p class="price">
+                  &#8377;58,750
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.urbanladder.com/">Urban Ladder</a></p>
+                  <p>Charges on Shiping</p>
+                  <p class="order"><a href="https://www.urbanladder.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 5 ends here -->
+               <!--card 6 starts here -->
+             <div class="card_container">
+                <a href="#" class="card_image_container">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2023/03/modernbedframes-2048px-tuftandneedle-hero.jpg?auto=webp&quality=75&width=1024" alt="card 1 image" class="card_image" loading="lazy"/>
+                </a>
+                <p class="desc">
+                  Brown Wooden Bed By Ikea
+                </p>
+                <p class="price">
+                  &#8377;62,000
+                </p>
+                <div class="company_details">
+                  <p><a href="https://www.ikea.com/">Ikea</a></p>
+                  <p>Free Shiping</p>
+                  <p class="order"><a href="https://www.ikea.com/"><b>Buy Now</b></a></p>
+                </div>
+               </div>
+               <!-- card 6 ends here -->
+        </main>
+    </div>
+</body>
+</html>
